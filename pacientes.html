@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pacientes</title>
+
+    <!-- TIPOGRAFÍA -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+       
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/pacientes.css">
+     <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> 
+   
+
+    <!-- ICONOS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <!-- MENÚ -->
+
+    <nav id="menu-principal">
+
+        <!-- LOGO -->
+
+        <a href="index.html" id="logo">
+
+            <img src="img/logo.png" alt="Logo">
+
+        </a>
+
+        <!-- Inicio -->
+
+        <a href="index.html">
+
+            <span class="material-symbols-outlined">home</span>
+            Inicio
+        </a>
+
+        <!-- Ejercicios -->
+
+        <a href="ejercicios.html">
+
+            <span class="material-symbols-outlined"> self_improvement</span>
+            Ejercicios
+        </a>
+
+        <!-- Pacientes -->
+
+        <a href="pacientes.html" id="enlace-pacientes">
+
+            <span class="material-symbols-outlined">groups </span>
+            Pacientes
+        </a>
+
+        <!-- Reporte -->
+
+        <a href="reporte.html">
+
+            <span class="material-symbols-outlined">monitoring</span>
+            Reporte
+        </a>
+
+        <!-- Diario -->
+
+        <a href="diario.html">
+
+            <span class="material-symbols-outlined">menu_book</span>
+             Diario
+
+        </a>
+
+
+        <!-- BOTÓN -->
+        
+        <button id="boton-menu">
+
+           <a class="nav-link" href="index.html">
+            <span class="material-symbols-outlined">logout </span> Logout</a>
+
+        </button>
+
+    </nav>
+
+
+
+    <!-- CONTENIDO -->
+
+    <main id="panel-principal">
+
+
+        <!-- TÍTULO -->
+
+        <section id="encabezado-pacientes">
+
+            <h1>
+                Pacientes
+            </h1>
+
+            <p>
+                Registro de pacientes
+            </p>
+
+        </section>
+
+
+
+        <!-- BOTÓN AGREGAR -->
+
+        <section id="seccion-agregar">
+
+            <button id="boton-agregar">
+
+                <span class="material-symbols-outlined">
+                    person_add
+                </span>
+
+                Agregar paciente
+
+            </button>
+
+        </section>
+
+
+
+        <!-- TABLA -->
+
+        <table class="table table-hover table-bordered " >
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th >Email</th>
+        <th class="text-center">Eliminar</th>
+        <th class="text-center">Actualizar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>º
+        <td class="text-center text-danger"><span class="material-symbols-outlined">delete</span></td>
+        <td class="text-center text-success"><span class="material-symbols-outlined">edit</span></td>   
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+        <td class="text-center text-danger"><span class="material-symbols-outlined">delete</span></td>
+        <td class="text-center text-success"><span class="material-symbols-outlined">edit</span></td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+        <td class="text-center text-danger"><span class="material-symbols-outlined">delete</span></td>
+        <td class="text-center text-success"><span class="material-symbols-outlined">edit</span></td>
+      </tr>
+    </tbody>
+  </table>   
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>

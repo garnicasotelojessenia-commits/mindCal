@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar sesión | MindCalm</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/inicio_sesion.css">
+
+</head>
+
+
+<body>
+
+    <main class="pagina-login">
+
+        <!-- Decoraciones -->
+
+        <span class="nube-decorativa nube-1"></span>
+        <span class="nube-decorativa nube-2"></span>
+
+        <section class="tarjeta-login">
+
+            <!-- Regresar -->
+
+            <nav class="regresar">
+
+                <a href="index.html">
+
+                    <span class="material-symbols-outlined">
+                        arrow_back
+                    </span>
+
+                    Regresar
+
+                </a>
+
+            </nav>
+
+
+            <!-- Encabezado -->
+
+            <header class="encabezado-login">
+
+                <figure class="logo">
+
+                    <img src="img/Logo.png" width="100"  height="100">
+
+                </figure>
+
+                <h1>Bienvenido de nuevo</h1>
+
+                <p>
+                    Nos alegra tenerte aquí.
+                    <br>
+                    Continúa cuidando de ti.
+                </p>
+
+            </header>
+
+
+            <!-- Formulario -->
+
+            <form class="formulario">
+
+                <label for="correo">
+                    Correo electrónico
+                </label>
+
+                <section class="campo">
+
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@correo.com"
+                        required
+                    >
+
+                </section>
+
+
+                <label for="password">
+                    Contraseña
+                </label>
+
+                <section class="campo">
+
+                    <span class="material-symbols-outlined">
+                        lock
+                    </span>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Ingresa tu contraseña"
+                        required
+                    >
+
+                    <button type="button" class="ver-password">
+
+                        <span class="material-symbols-outlined">
+                            visibility
+                        </span>
+
+                    </button>
+
+                </section>
+
+
+                <a href="#" class="olvidaste">
+                    ¿Olvidaste tu contraseña?
+                </a>
+
+
+                <button type="submit" class="boton-login">
+
+                    Iniciar sesión
+
+                    <span class="material-symbols-outlined">
+                        arrow_forward
+                    </span>
+
+                </button>
+
+            </form>
+
+
+            <!-- Registro -->
+
+            <footer class="registro">
+
+                <p>
+                    ¿Aún no tienes una cuenta?
+                </p>
+
+                <a href="registro.html">
+                    Crear una cuenta
+                </a>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
