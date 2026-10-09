@@ -9,20 +9,16 @@
 
     <title>Ejercicios</title>
 
-    <!-- TIPOGRAFÍA -->
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/ejercicios.css">
-
-    <!-- BOOTSTRAP -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/ejercicios.css">
 
-    <!-- ICONOS -->
+
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
         rel="stylesheet">
@@ -32,7 +28,6 @@
 
 <body>
 
-    <!--  MENÚ -->
 
     <header>
     <nav class="navbar navbar-expand-lg ">
@@ -45,11 +40,9 @@
         </button>
         <section class="collapse navbar-collapse" id="menuPrincipal">
           <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="index (2).html><span class="material-symbols-outlined">home</span> Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html"><span class="material-symbols-outlined">home</span> Inicio</a></li>
             <li class="nav-item ms-lg-2">
-              <button type="button" class="btn btn-outline-primary d-flex align-items-center gap-1" data-bs-toggle="modal" data-bs-target="#modalLogin">
-              <a> href="subHome.html" <span class="material-symbols-outlined">login</span> Cerrar Sesion</a> 
-              </button>
+              <a class="btn btn-outline-primary d-flex align-items-center gap-1" href="subHome.html"><span class="material-symbols-outlined">logout</span> Cerrar sesión</a>
             </li>
           </ul>
         </section>
@@ -57,31 +50,19 @@
     </nav>
   </header>
 
-
-    <!-- =========================
-         CONTENIDO
-         ========================= -->
-
     <main id="panel-principal">
 
 
-        <!-- TÍTULO -->
-
         <section id="encabezado-ejercicios">
-
             <h1>Ejercicios</h1>
 
             <p>
                 Elige una actividad para sentirte mejor.
             </p>
-
         </section>
 
 
-        <!-- FILTROS-->
-
         <section id="filtros">
-
             <button class="filtro activo">
                 Todos
             </button>
@@ -89,180 +70,111 @@
             <a href="respiracion.html" class="filtro">
                  Respiración
             </a>
-
             <button class="filtro">
                 Meditación
             </button>
-
             <button class="filtro">
                 Estiramiento
             </button>
-
         </section>
 
 
-    <!--ejercicios-->
-
         <section id="lista-ejercicios">
-
-
-            <!-- EJERCICIO 1 -->
-
             <article class="tarjeta-ejercicio">
-
                 <img
                     src="img/meditacion.jpg"
                     alt="Imagen del ejercicio">
-
                 <section class="informacion-ejercicio">
-
                     <h2>Meditación guiada</h2>
-
                     <p>
                         Conecta contigo y relájate.
                     </p>
-
                     <small>
                         10 min
                     </small>
-
                 </section>
-
             </article>
 
-
-            <!-- EJERCICIO 2 -->
-
             <article class="tarjeta-ejercicio">
-
                 <img
                     src="img/respiracion.jpg"
                     alt="Imagen del ejercicio">
-
                 <section class="informacion-ejercicio">
-
                     <h2>Respiración</h2>
-
                     <p>
                         Calma tu mente en minutos.
                     </p>
-
                     <small>
                         5 min
                     </small>
-
                 </section>
-
             </article>
 
-
-            <!-- EJERCICIO 3 -->
-
             <article class="tarjeta-ejercicio">
-
                 <img
                     src="img/relajacion.jpg"
                     alt="Imagen del ejercicio">
-
                 <section class="informacion-ejercicio">
-
                     <h2>Relajación muscular</h2>
-
                     <p>
                         Libera la tensión de tu cuerpo.
                     </p>
-
                     <small>
                         8 min
                     </small>
-
                 </section>
-
             </article>
 
-
-            <!-- EJERCICIO 4 -->
-
             <article class="tarjeta-ejercicio">
-
                 <img
                     src="img/visualizacion.jpg"
                     alt="Imagen del ejercicio">
-
                 <section class="informacion-ejercicio">
-
                     <h2>Visualización positiva</h2>
-
                     <p>
                         Imagina un momento agradable.
                     </p>
-
                     <small>
                         7 min
                     </small>
-
                 </section>
-
             </article>
 
-
-            <!-- EJERCICIO 5 -->
-
             <article class="tarjeta-ejercicio">
-
                 <img
                     src="img/escaneo.jpg"
                     alt="Imagen del ejercicio">
-
                 <section class="informacion-ejercicio">
-
                     <h2>Escaneo corporal</h2>
-
                     <p>
                         Reconecta con tu cuerpo.
                     </p>
-
                     <small>
                         8 min
                     </small>
-
                 </section>
-
             </article>
 
-
-            <!-- EJERCICIO 6 -->
-
             <article class="tarjeta-ejercicio">
-
                 <img
                     src="img/sonidos.jpg"
                     alt="Imagen del ejercicio">
-
                 <section class="informacion-ejercicio">
-
                     <h2>Sonidos calmantes</h2>
-
                     <p>
-                        Relájate con sonidos suaves.
+                        Relajate con sonidos suaves.
                     </p>
-
                     <small>
                         20 min
                     </small>
-
                 </section>
-
             </article>
-
-
         </section>
 
     </main>
-    
 <footer class="text-center py-3 mt-4 border-top">
     <p class="mb-0 d-flex align-items-center justify-content-center gap-1">
-      <span class="material-symbols-outlined">favorite</span> MindCalm  Proyecto escolar · 2026
+      <span class="material-symbols-outlined">favorite</span> MindCalm  Proyecto APPWEB
     </p>
   </footer>
 

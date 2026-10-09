@@ -1,7 +1,3 @@
-/* Estilo general */
-
-
-
 body {
     background-color: #316CA8 !important;
     font-family: Arial, sans-serif;
@@ -18,9 +14,6 @@ a {
     color: #2F6BA8;
     text-decoration: none;
 }
-
-
-/*Menu principal*/
 
 h1, h2, h3, h4, h5 {
     font-family: "Poppins", sans-serif;
@@ -57,7 +50,6 @@ header .nav-link {
     color: #2F6BA8;
     font-weight: 700;
     padding: 10px;
-
 }
 
 header .nav-link:hover {
@@ -66,22 +58,17 @@ header .nav-link:hover {
 }
 
 
-/* ejercicios */
-
 #enlace-ejercicios {
     background-color: #6BA3C0;
     color: #fff;
 }
 
 
-/* logout */
 
 #boton-menu {
     margin-left: auto;
 }
 
-
-/*principal*/
 
 #panel-principal {
     width: 96%;
@@ -91,8 +78,8 @@ header .nav-link:hover {
     background-color: #D9D9D9;
     border-radius: 20px;
     min-height: 80vh;
+    box-sizing: border-box;
 }
-
 
 #encabezado-ejercicios h1 {
     font-size: 36px;
@@ -104,33 +91,42 @@ header .nav-link:hover {
     font-size: 17px;
 }
 
+
 #filtros {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     margin: 25px 0;
-    flex-wrap: wrap;
 }
 
 .filtro {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 12px 28px;
+    font-family: Arial, sans-serif;
     font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #2F6BA8;
+    background-color: #F3F0E6;
+    border: 1px solid #8EC5DF;
     border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
+
 .filtro:hover {
     background-color: #6BA3C0;
-    color: white;
+    color: #fff;
 }
 
 .filtro.activo {
     background-color: #6BA3C0;
-    color: white;
-}
-.filtro a{
-    text-decoration: none;
+    color: #fff;
+    border-color: #6BA3C0;
 }
 
-/*lista de ejercicios*/
 
 #lista-ejercicios {
     display: grid;
@@ -143,9 +139,12 @@ header .nav-link:hover {
     align-items: center;
     gap: 18px;
     padding: 18px;
+    min-width: 0;
     min-height: 120px;
     border: 1px solid #8EC5DF;
     border-radius: 16px;
+    background-color: #F3F0E6;
+    box-sizing: border-box;
 }
 
 .tarjeta-ejercicio img {
@@ -154,6 +153,11 @@ header .nav-link:hover {
     object-fit: cover;
     border-radius: 12px;
     flex-shrink: 0;
+}
+
+.informacion-ejercicio {
+    min-width: 0;
+    overflow-wrap: break-word;
 }
 
 .informacion-ejercicio h2 {
@@ -170,37 +174,46 @@ header .nav-link:hover {
 .informacion-ejercicio small {
     font-size: 14px;
 }
-@media (max-width: 768px) {
-    #panel-principal {
-        width: 94%;
-        padding: 18px;
-    }
 
-    #lista-ejercicios {
-        grid-template-columns: 1fr;
-    }
 
-    .tarjeta-ejercicio {
-        padding: 12px;
-        gap: 12px;
-    }
 
-    .tarjeta-ejercicio img {
-        width: 65px;
-        height: 65px;
-    }
-
-    .informacion-ejercicio h2 {
-        font-size: 18px;
-    }
-
-    .informacion-ejercicio p {
-        font-size: 14px;
-    }
-}
-
-    body > footer {
+body > footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
 }
+
+#panel-principal {
+        width: 100%;
+        padding: 22px;
+    }
+
+#lista-ejercicios {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+
+
+.tarjeta-ejercicio {
+        gap: 12px;
+        padding: 12px;
+    }
+
+.tarjeta-ejercicio img {
+        width: 65px;
+        height: 65px;
+    }
+
+.informacion-ejercicio h2 {
+        font-size: 17px;
+    }
+
+.informacion-ejercicio p {
+        font-size: 14px;
+    }
+
+.informacion-ejercicio small {
+        font-size: 13px;
+    }
+

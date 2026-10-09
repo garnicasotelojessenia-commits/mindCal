@@ -1,5 +1,4 @@
 
-/* ESTILO GENERAL */
 html{
     background-color: #316CA8 ;
 }
@@ -30,10 +29,6 @@ button {
     cursor: pointer;
 }
 
-
-/* =========================
-   MENU PRINCIPAL
-   ========================= */
 
 h1, h2, h3, h4, h5 {
     font-family: "Poppins", sans-serif;
@@ -78,33 +73,6 @@ header .nav-link:hover {
     color: #fff;
 }
 
-/* =========================
-   NUBECITAS DEL FONDO
-   ========================= */
-
-body::before {
-    content: "☁";
-    position: fixed;
-    top: 120px;
-    left: 30px;
-    font-size: 70px;
-    color: #DDECF5;
-    opacity: 0.3;
-    
-}
-
-body::after {
-    content:"☁" ;
-    position: fixed;
-    bottom: 50px;
-    right: 30px;
-    font-size: 90px;
-    color: #DDECF5;
-    opacity: 0.7;
-    z-index: 0;
-}
-
-/* Logo */
 
 #menu-principal #logo {
     background-color: transparent;
@@ -118,19 +86,10 @@ body::after {
     object-fit: contain;
 }
 
-/* Enlace activo */
-
 #enlace-pacientes {
     background-color: #6BA3C0;
     color: white;
 }
-
-
-
-
-/* =========================
-   PANEL PRINCIPAL
-   ========================= */
 
 #panel-principal {
     width: 90%;
@@ -139,11 +98,6 @@ body::after {
     border-radius: 18px;
     padding: 20px;
 }
-
-
-/* =========================
-   TITULO PACIENTES
-   ========================= */
 
 #titulo-pacientes {
     color: #2F6BA8;
@@ -157,11 +111,6 @@ body::after {
     font-size: 15px;
     margin-bottom: 20px;
 }
-
-
-/* =========================
-   BOTON AGREGAR PACIENTE
-   ========================= */
 
 #boton-agregar {
     background-color: #6BA3C0;
@@ -182,15 +131,6 @@ body::after {
 }
 
 
-/* =========================
-   TABLA DE PACIENTES
-   ========================= */
-
-
-
-
-/* Encabezados */
-
 #tabla-pacientes thead th {
     background-color: #6BA3C0;
     color: white;
@@ -198,7 +138,6 @@ body::after {
     border: none;
 }
 
-/* Celdas */
 
 #tabla-pacientes tbody td {
     color: #2F6BA8;
@@ -206,16 +145,10 @@ body::after {
     font-size: 13px;
 }
 
-/* Espacio entre filas */
-
 #tabla-pacientes tbody tr {
     border-bottom: 1px solid #9CC5D8;
 }
 
-
-/* =========================
-   BOTON ACTUALIZAR
-   ========================= */
 
 .boton-actualizar {
     background-color: #6FB589;
@@ -231,10 +164,6 @@ body::after {
 }
 
 
-/* =========================
-   BOTON ELIMINAR
-   ========================= */
-
 .boton-eliminar {
     background-color: #9A3B30;
     color: white;
@@ -249,51 +178,4 @@ body::after {
 }
 
 
-/* =========================
-   DISEÑO PARA PANTALLAS PEQUEÑAS
-   ========================= */
-
-@media (max-width: 768px) {
-
-    body {
-        padding: 10px;
-    }
-
-    #menu-principal {
-        width: 100%;
-        gap: 5px;
-        flex-wrap: wrap;
-    }
-
-    #menu-principal a {
-        padding: 7px;
-        font-size: 13px;
-    }
-
-    #panel-principal {
-        width: 100%;
-        padding: 15px;
-    }
-
-    #titulo-pacientes {
-        font-size: 22px;
-    }
-
-    #boton-agregar {
-        font-size: 13px;
-    }
-
-    #tabla-pacientes {
-        font-size: 12px;
-    }
-
-    #tabla-pacientes tbody td {
-        font-size: 12px;
-    }
-
-    body > footer {
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-}
-}
+    

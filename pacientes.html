@@ -9,30 +9,22 @@
 
     <title>Pacientes</title>
 
-    <!-- TIPOGRAFÍA -->
+
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
         rel="stylesheet">
-       
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/pacientes.css">
-     <!-- Latest compiled and minified CSS -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Latest compiled JavaScript -->
+    <link rel="stylesheet" href="css/pacientes.css">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> 
    
-
-    <!-- ICONOS -->
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
         rel="stylesheet">
 
 </head>
-
-
 <body>
-
-    <!-- MENÚ -->
 
      <header>
     <nav class="navbar navbar-expand-lg ">
@@ -45,15 +37,14 @@
         </button>
         <section class="collapse navbar-collapse" id="menuPrincipal">
           <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="index (2).html"><span class="material-symbols-outlined">home</span> Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html"><span class="material-symbols-outlined">home</span> Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="ejercicios.html"><span class="material-symbols-outlined">self_improvement</span> Ejercicios</a></li>
             <li class="nav-item"><a class="nav-link" href="#"><span class="material-symbols-outlined">person</span> Perfil</a></li>
             
             <li class="nav-item ms-lg-2">
-              <button type="button" class="btn btn-outline-primary d-flex align-items-center gap-1" data-bs-toggle="modal" data-bs-target="#modalLogin">
-               <a href= "subHome.html"> <span class="material-symbols-outlined">login</span> Cerrar sesion</a>
-                  
-              </button>
+              <a class="btn btn-outline-primary d-flex align-items-center gap-1" href="subHome.html">
+                <span class="material-symbols-outlined" aria-hidden="true">logout</span> Cerrar sesión
+              </a>
             </li>
           </ul>
         </section>
@@ -61,55 +52,35 @@
     </nav>
   </header>
 
-
-
-    <!-- CONTENIDO -->
-
     <main id="panel-principal">
 
-
-        <!-- TÍTULO -->
-
         <section id="encabezado-pacientes">
-
             <h1>
                 Pacientes
             </h1>
-
             <p>
                 Registro de pacientes
             </p>
-
         </section>
 
-
-
-        <!-- BOTÓN AGREGAR -->
-
         <section id="seccion-agregar">
-
     <button id="boton-agregar"
             type="button"
             class="btn btn-primary"
             data-bs-toggle="modal"
             data-bs-target="#modalPaciente">
-
         <span class="material-symbols-outlined">
             person_add
         </span>
-
         Agregar paciente
-
     </button>
 
 </section>
 
-        <!-- TABLA -->
-
         <table class="table table-hover table-bordered " >
     <thead>
       <tr>
-        <th>N.º</th>
+        <th>N.</th>
         <th>Nombre</th>
         <th>Apellido</th>
         <th >Email</th>
@@ -145,7 +116,6 @@
     </tbody>
   </table>   
         </section>
-
 
     </main>
 <div class="modal fade" id="modalPaciente" tabindex="-1">
@@ -186,14 +156,11 @@
     </div>
 </div>
 
-<!--FOOTER-->
 <footer class="text-center py-3 mt-4 border-top">
     <p class="mb-0 d-flex align-items-center justify-content-center gap-1">
-      <span class="material-symbols-outlined">favorite</span> MindCalm  Proyecto escolar · 2026
+      <span class="material-symbols-outlined">favorite</span> MindCalm  Proyecto APPWEB
     </p>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

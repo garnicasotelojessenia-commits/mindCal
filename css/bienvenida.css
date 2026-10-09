@@ -99,7 +99,7 @@ body {
     border-radius: 15px;
 }
 
-@media (max-width: 767px) {
+
     .contenido {
         padding: 25px 18px;
     }
@@ -112,7 +112,6 @@ body {
         max-height: 260px;
         margin-top: 25px;
     }
-}
 .invitado {
     display: inline-flex;
     align-items: center;

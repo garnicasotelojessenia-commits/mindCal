@@ -1,5 +1,3 @@
-
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,10 +8,6 @@ body {
     font-family: "Inter", sans-serif;
     color: #173f68;
 }
-
-
-
-/* fondo */
 
 
 .pagina-login {
@@ -34,9 +28,6 @@ body {
 }
 
 
-
-/* TARJETA */
-
 .tarjeta-login {
 
     width: 100%;
@@ -48,9 +39,6 @@ body {
     box-shadow:  0 20px 50px rgba(45, 110, 150, 0.15);
 }
 
-
-
-/* REGRESAR */
 
 .regresar {
     margin-bottom: 20px;
@@ -71,8 +59,6 @@ body {
 }
 
 
-
-/* LOGO */
 
 .encabezado-login {
     text-align: center;
@@ -111,17 +97,11 @@ body {
 }
 
 
-
-/* FORMULARIO */
-
-
 .formulario {
     display: flex;
     flex-direction: column;
 }
 
-
-/* ETIQUETAS */
 
 .formulario label {
     color: #244f73;
@@ -129,10 +109,6 @@ body {
     font-weight: 600;
     margin-bottom: 7px;
 }
-
-
-
-/* CAMPOS */
 
 
 .campo {
@@ -177,10 +153,6 @@ body {
 }
 
 
-
-/* boton contraseña */
-
-
 .ver-password {
     border: none;
     background: transparent;
@@ -193,9 +165,6 @@ body {
     color: #3973a8;
 }
 
-
-
-/* OLVIDASTE CONTRASEÑA */
 
 .olvidaste {
     align-self: flex-end;
@@ -211,11 +180,7 @@ body {
 }
 
 
-
-
-
 .boton-login {
-
     width: 100%;
     height: 55px;
     display: flex;
@@ -234,16 +199,10 @@ body {
         0 8px 20px rgba(57, 115, 168, 0.25)
 }
 
-
 .boton-login:hover {
-
     background: #2c628f;
     transform: translateY(-2px);
 }
-
-
-
-/* REGISTRO */
 
 
 .registro {
@@ -274,13 +233,6 @@ body {
     text-decoration: none;
 }
 
-
-
-
-/* RESPONSIVE */
-
-
-@media (max-width: 600px) {
     .pagina-login {
         padding: 20px;
     }
@@ -298,5 +250,4 @@ body {
     border-left: 5px solid #316CA8;
     border-radius: 10px;
     color: #263B53;
-}
 }
