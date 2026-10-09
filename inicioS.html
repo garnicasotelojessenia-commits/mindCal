@@ -27,10 +27,9 @@
 
     <main class="pagina-login">
 
-        <!-- Decoraciones -->
+        
 
-        <span class="nube-decorativa nube-1"></span>
-        <span class="nube-decorativa nube-2"></span>
+        
 
         <section class="tarjeta-login">
 
@@ -57,7 +56,7 @@
 
                 <figure class="logo">
 
-                    <img src="img/Logo.png" width="100"  height="100">
+                    <img src="img/logo2.png" width="100"  height="100">
 
                 </figure>
 
@@ -82,18 +81,8 @@
 
                 <section class="campo">
 
-                    <span class="material-symbols-outlined">
-                        mail
-                    </span>
-
-                    <input
-                        type="email"
-                        id="correo"
-                        name="correo"
-                        placeholder="ejemplo@correo.com"
-                        required
-                    >
-
+                    <span class="material-symbols-outlined"> mail</span>
+                    <input type="email" id="correo"name="correo" placeholder="ejemplo@correo.com" required>
                 </section>
 
 
@@ -103,24 +92,14 @@
 
                 <section class="campo">
 
-                    <span class="material-symbols-outlined">
-                        lock
-                    </span>
-
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        placeholder="Ingresa tu contraseña"
-                        required
-                    >
-
-                    <button type="button" class="ver-password">
+                    <span class="material-symbols-outlined">lock</span>
+                    <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                    <button type="button" onclick="metodo1()" class="ver-password">
 
                         <span class="material-symbols-outlined">
                             visibility
                         </span>
-
+                         <section id="mensaje"></section>
                     </button>
 
                 </section>
@@ -131,7 +110,7 @@
                 </a>
 
 
-                <button type="submit" class="boton-login">
+                <button type="submit" onclick="metodo1" class="boton-login">
 
                     Iniciar sesión
 
@@ -155,7 +134,7 @@
                 <a href="registro.html">
                     Crear una cuenta
                 </a>
-
+                    
             </footer>
 
         </section>
