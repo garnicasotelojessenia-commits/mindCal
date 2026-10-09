@@ -1,0 +1,10 @@
+function metodo1() {
+    let nombre = document.getElementById("correo").value;
+    let genero = document.getElementById("contraseña").value;
+    
+
+    alert(
+        "Nombre: " + nombre +
+        "\nGenero: " + contraseña 
+    );
+}

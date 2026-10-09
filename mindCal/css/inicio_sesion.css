@@ -1,0 +1,302 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #173f68;
+}
+
+
+
+/* fondo */
+
+
+.pagina-login {
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    background: linear-gradient(
+        135deg,
+        #e8f7fc,
+        #ccecf8
+    );
+}
+
+
+
+/* TARJETA */
+
+.tarjeta-login {
+
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 35px 50px 40px;
+    position: relative;
+    box-shadow:  0 20px 50px rgba(45, 110, 150, 0.15);
+}
+
+
+
+/* REGRESAR */
+
+.regresar {
+    margin-bottom: 20px;
+}
+
+.regresar a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #3973a8;
+    font-size: 14px;
+    font-weight: 500;
+     text-decoration: none;
+}
+
+.regresar a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* LOGO */
+
+.encabezado-login {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow:0 8px 20px rgba(57, 115, 168, 0.15);
+}
+
+.logo img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.encabezado-login h1 {
+    font-size: 27px;
+    color: #174d7c;
+    margin-bottom: 10px;
+}
+
+
+.encabezado-login p {
+    color: #6b8093;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+
+/* FORMULARIO */
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ETIQUETAS */
+
+.formulario label {
+    color: #244f73;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+
+
+/* CAMPOS */
+
+
+.campo {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1.5px solid #cbdfe9;
+    border-radius: 12px;
+    padding: 0 14px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    background: #ffffff;
+}
+
+
+.campo:focus-within {
+    border-color: #3973a8;
+    box-shadow: 0 0 0 3px rgba(57, 115, 168, 0.10);
+}
+
+
+.campo > span {
+    color: #3973a8;
+    font-size: 22px;
+}
+
+
+.campo input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #244f73;
+}
+
+
+.campo input::placeholder {
+    color: #9aabb8;
+}
+
+
+
+/* boton contraseña */
+
+
+.ver-password {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    color: #6d8ba2;
+}
+
+.ver-password:hover {
+    color: #3973a8;
+}
+
+
+
+/* OLVIDASTE CONTRASEÑA */
+
+.olvidaste {
+    align-self: flex-end;
+    color: #3973a8;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: -8px;
+    margin-bottom: 25px;
+}
+
+.olvidaste:hover {
+    text-decoration: none;
+}
+
+
+
+
+
+.boton-login {
+
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 30px;
+    background: #3973a8;
+    color: white;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow:
+        0 8px 20px rgba(57, 115, 168, 0.25)
+}
+
+
+.boton-login:hover {
+
+    background: #2c628f;
+    transform: translateY(-2px);
+}
+
+
+
+/* REGISTRO */
+
+
+.registro {
+    text-align: center;
+    margin-top: 28px;
+    padding-top: 22px;
+    border-top: 1px solid #e4edf2;
+}
+
+
+.registro p {
+    display: inline;
+    color: #7b8d9d;
+    font-size: 13px;
+}
+
+
+.registro a {
+    color: #3973a8;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+
+.registro a:hover {
+    text-decoration: none;
+}
+
+
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 600px) {
+    .pagina-login {
+        padding: 20px;
+    }
+    .tarjeta-login {
+        padding: 30px 25px 35px;
+    }
+    .encabezado-login h1 {
+        font-size: 24px;
+    }
+
+    #mensaje {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #E8F4FC;
+    border-left: 5px solid #316CA8;
+    border-radius: 10px;
+    color: #263B53;
+}
+}
