@@ -9,6 +9,7 @@ body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 
 
@@ -22,11 +23,11 @@ body {
     align-items: center;
     position: relative;
     color: white;
+
 }
 
 
 /*Boton regresar */
-
 #boton-regresar {
     position: absolute;
     top: 15px;
@@ -77,6 +78,7 @@ body {
     justify-content: center;
     box-sizing: border-box;
     animation: respirar 8s infinite ease-in-out;
+
 }
 
 
@@ -94,11 +96,8 @@ body {
 #indicador-respiracion {
     width: 22px;
     height: 4px;
-
     background-color: #9CC5D8;
-
     border-radius: 5px;
-
     margin-top: 18px;
 }
 

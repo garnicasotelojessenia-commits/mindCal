@@ -22,47 +22,47 @@ a {
 
 /*Menu principal*/
 
-#menu-principal {
+h1, h2, h3, h4, h5 {
+    font-family: "Poppins", sans-serif;
+    color: #2F6BA8;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+
+body > header {
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
+}
+
+header nav.navbar {
     background-color: #F3F0E6;
-    border-radius: 20px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    gap: 2px;
-   
-}
-
-#menu-principal a {
-    padding: 10px;
     border-radius: 15px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    border: none;
-    text-decoration: none;
+    padding: 10px;
 }
 
-#menu-principal a img {
-    width: 24px;
-    height: 24px;
+header .container {
+    max-width: none;
 }
 
-
-/* Logo */
-
-#menu-principal #logo {
-    background-color: transparent;
-    padding: 0;
-    border: none;
+header .navbar-brand {
+    color: #2F6BA8;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
 }
 
-#menu-principal #logo img {
-    width: 60px;
-    height: 60px;
-    
+header .nav-link {
+    color: #2F6BA8;
+    font-weight: 700;
+    padding: 10px;
+
+}
+
+header .nav-link:hover {
+    background-color: #6BA3C0;
+    color: #fff;
 }
 
 
@@ -70,7 +70,7 @@ a {
 
 #enlace-ejercicios {
     background-color: #6BA3C0;
-    color: white;
+    color: #fff;
 }
 
 
@@ -84,46 +84,39 @@ a {
 /*principal*/
 
 #panel-principal {
-    width: 90%;
-    margin: 15px auto 0;
-    background-color: #DADADA;
-    border-radius: 18px;
-    padding: 20px;
+    width: 96%;
+    max-width: none;
+    margin: 15px auto;
+    padding: 30px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    min-height: 80vh;
 }
 
 
 #encabezado-ejercicios h1 {
-    color: #2F6BA8;
-    font-size: 26px;
+    font-size: 36px;
     font-weight: 800;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 #encabezado-ejercicios p {
-    color: #2F6BA8;
-    font-size: 14px;
-    margin-bottom: 15px;
+    font-size: 17px;
 }
-
-
-
 
 #filtros {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
-    margin-bottom: 15px;
+    margin: 25px 0;
+    flex-wrap: wrap;
 }
 
 .filtro {
-    background-color: #F3F0E6;
-    color: #6BA3C0;
-    border: 1px solid #9CC5D8;
+    padding: 12px 28px;
+    font-size: 17px;
     border-radius: 15px;
-    padding: 6px 25px;
-    font-family:
-    
 }
-
 .filtro:hover {
     background-color: #6BA3C0;
     color: white;
@@ -133,90 +126,81 @@ a {
     background-color: #6BA3C0;
     color: white;
 }
-
+.filtro a{
+    text-decoration: none;
+}
 
 /*lista de ejercicios*/
 
 #lista-ejercicios {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-    margin-top: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
 }
-
-
-/*tarjetas */
 
 .tarjeta-ejercicio {
     display: flex;
-    background-color: #DADADA;
-    border: 1px solid #9CC5D8;
-    border-radius: 12px;
-    padding: 10px;
     align-items: center;
-    gap: 12px;
-    min-height: 75px;
+    gap: 18px;
+    padding: 18px;
+    min-height: 120px;
+    border: 1px solid #8EC5DF;
+    border-radius: 16px;
 }
-
-
-/* imagen */
 
 .tarjeta-ejercicio img {
- background-color: #F3F0E6;
-    width: 55px;
-    height: 55px;
-    object-fit: contain;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
     border-radius: 12px;
-    padding: 5px;
+    flex-shrink: 0;
 }
 
-
-/* Inf */
-
 .informacion-ejercicio h2 {
-    color: #2F6BA8;
-    font-size: 14px;
-    font-weight: 700;
-    margin: 0 0 3px;
+    font-size: 21px;
+    font-weight: 800;
+    margin-bottom: 8px;
 }
 
 .informacion-ejercicio p {
-    color: #2F6BA8;
-    font-size: 11px;
-    margin: 0;
+    font-size: 16px;
+    margin-bottom: 8px;
 }
 
 .informacion-ejercicio small {
-    color: #2F6BA8;
-    font-size: 10px;
+    font-size: 14px;
 }
-
-
-/* pantallas pequeñas */
-
 @media (max-width: 768px) {
-
-    body {
-        padding: 10px;
-    }
-
-    #menu-principal {
-        width: 100%;
-        flex-wrap: wrap;
-    }
-
     #panel-principal {
-        width: 100%;
-
-        padding: 15px;
+        width: 94%;
+        padding: 18px;
     }
 
     #lista-ejercicios {
         grid-template-columns: 1fr;
     }
 
-    #filtros {
-        flex-wrap: wrap;
+    .tarjeta-ejercicio {
+        padding: 12px;
+        gap: 12px;
     }
 
+    .tarjeta-ejercicio img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .informacion-ejercicio h2 {
+        font-size: 18px;
+    }
+
+    .informacion-ejercicio p {
+        font-size: 14px;
+    }
+}
+
+    body > footer {
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
 }

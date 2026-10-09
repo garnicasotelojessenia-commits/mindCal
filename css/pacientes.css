@@ -35,39 +35,49 @@ button {
    MENU PRINCIPAL
    ========================= */
 
-#menu-principal {
+h1, h2, h3, h4, h5 {
+    font-family: "Poppins", sans-serif;
+    color: #2F6BA8;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+
+body > header {
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
+}
+
+header nav.navbar {
     background-color: #F3F0E6;
-    border-radius: 20px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    gap: 2px;
-    border:none ;
-    outline: none;
-}
-
-#menu-principal a {
-    padding: 10px;
     border-radius: 15px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    border: none;
-     text-decoration: none;
+    padding: 10px;
 }
 
-#menu-principal a img {
-    width: 24px;
-    height: 24px;
+header .container {
+    max-width: none;
 }
-#menu-principal,
-#panel-principal {
-    position: relative;
-    z-index: 1;
+
+header .navbar-brand {
+    color: #2F6BA8;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
 }
+
+header .nav-link {
+    color: #2F6BA8;
+    font-weight: 700;
+    padding: 10px;
+
+}
+
+header .nav-link:hover {
+    background-color: #6BA3C0;
+    color: #fff;
+}
+
 /* =========================
    NUBECITAS DEL FONDO
    ========================= */
@@ -79,8 +89,8 @@ body::before {
     left: 30px;
     font-size: 70px;
     color: #DDECF5;
-    opacity: 0.7;
-    z-index: 0;
+    opacity: 0.3;
+    
 }
 
 body::after {
@@ -281,4 +291,9 @@ body::after {
         font-size: 12px;
     }
 
+    body > footer {
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
 }
