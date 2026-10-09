@@ -1,0 +1,113 @@
+body {
+    font-family: "Nunito", sans-serif;
+    color: #2F6BA8;
+    background-color: #316CA8;
+    margin: 0;
+    padding: 70px 20px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Poppins", sans-serif;
+    color: #2F6BA8;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+
+body > header {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header nav.navbar {
+    background-color: #F3F0E6;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+header .container {
+    max-width: none;
+}
+
+header .navbar-brand {
+    color: #2F6BA8;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+header .nav-link {
+    color: #2F6BA8;
+    font-weight: 700;
+    padding: 10px;
+
+}
+
+header .nav-link:hover {
+    background-color: #6BA3C0;
+    color: #fff;
+}
+
+main {
+    flex: 1;
+}
+
+main.container {
+    max-width: none;
+    width: 90%;
+    margin: 15px auto 0;
+    background-color: #DADADA;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.contenido-modulo {
+    background-color: #F3F0E6;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+
+.acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.accion-card {
+    flex: 1 1 200px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 16px;
+    background-color: #fff;
+    border: 1px solid #9CC5D8;
+}
+
+.btn-principal {
+    background-color: #2F6BA8;
+    border-color: #2F6BA8;
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn-principal:hover {
+    background-color: #24547f;
+    border-color: #24547f;
+    color: #ffff;
+}
+
+.table-success {
+    --bs-table-bg: #9CC5D8;
+    --bs-table-border-color: #6BA3C0;
+    --bs-table-color: #1f3b57;
+}
+
+body > footer {
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
