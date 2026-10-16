@@ -77,7 +77,6 @@ body {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    animation: respirar 8s infinite ease-in-out;
 
 }
 
@@ -87,7 +86,6 @@ body {
 #circulo-respiracion img {
     width: 120px;
     height: 120px;
-    object-fit: contain;
 }
 
 
